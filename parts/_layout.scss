@@ -80,6 +80,9 @@
         padding: 0 14px;
         width: 70%;
     }
+    .bg-home::before{
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.6), #06121e), url("../assets/autismo-capa.jpg");
+    }
 }
 
 
@@ -136,6 +139,13 @@
         align-items: center;
         justify-content: center;
 
+        p{
+            font-size: 11px;
+        }
+        strong{
+            font-size: 14px;
+        }
+
         img{
             max-width: 280px;
         }
@@ -152,4 +162,19 @@
     .paragrafo-none{
         display: none;
     }
+}
+
+
+
+// Galeria Book
+
+
+.section-services{
+    background-color: var(--white-normal);
+    color: var(--black-normal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
 }

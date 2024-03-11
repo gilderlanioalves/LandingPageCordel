@@ -156,6 +156,9 @@ i {
     padding: 0 14px;
     width: 70%;
   }
+  .bg-home::before {
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.6), #06121e), url("../assets/autismo-capa.jpg");
+  }
 }
 .section-about {
   margin-top: 50px;
@@ -205,6 +208,12 @@ i {
     align-items: center;
     justify-content: center;
   }
+  .about-content p {
+    font-size: 11px;
+  }
+  .about-content strong {
+    font-size: 14px;
+  }
   .about-content img {
     max-width: 280px;
   }
@@ -218,6 +227,16 @@ i {
     display: none;
   }
 }
+.section-services {
+  background-color: var(--white-normal);
+  color: var(--black-normal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
 :root {
   --primary-normal: #06121E;
   --primary-dark: #040f1a;

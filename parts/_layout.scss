@@ -1,0 +1,155 @@
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// Backgroud Home 
+
+.bg-home{
+    position: relative;
+}
+
+.bg-home::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.7), #06121e), url("../assets/autismo-capa.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 2.5;
+}
+
+//hero
+
+.hero{
+    color: var(--white-normal);
+    min-height: 60vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    h1{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 40px;
+    }
+    p{
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+.button-contact{
+    padding: 14px 28px;
+    color: var(--white-normal);
+    background-color: var(--red-normal);
+    border: 0;
+    font-size: 17px;
+    margin: 20px 0;
+}
+
+.button-contact:hover{
+    animation: scaleButton 0.8s infinite alternate;
+}
+
+@keyframes scaleButton {
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.07);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        min-height: 40vh;
+    }
+
+    .hero h1{
+        font-size: 20px;
+        padding: 0 14px;
+        width: 70%;
+    }
+}
+
+
+// about
+
+.section-about{
+    margin-top: 50px;
+    background-color: var(--primary-normal);
+    overflow: hidden;
+    color: var(--white-normal);
+}
+
+.about-content{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+
+    img{
+        max-width: 400px;
+    }
+    strong{
+        position: absolute;
+        right: 3%;
+    }
+}
+
+.about-content div{
+    flex: 1;
+}
+.about-description{
+    h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+    p{
+        margin-bottom: 14px;
+        line-height: 150%;
+        
+    }
+}
+.paragrafo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+@media screen and (max-width: 768px) {
+    .about-content{
+        margin-top: -40px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            max-width: 280px;
+        }
+        h2{
+            display: none;
+        }
+
+    }
+
+    .about-description{
+        padding: 0 95px;
+    }
+
+    .paragrafo-none{
+        display: none;
+    }
+}
